@@ -1,0 +1,8 @@
+build/
+.cproject
+.project
+first
+MyDemo.cpp
+KafkaConsumer
+.settings/
+kafka.log
