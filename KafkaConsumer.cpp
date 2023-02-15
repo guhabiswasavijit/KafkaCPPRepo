@@ -141,10 +141,10 @@ int main(int argc, char *argv[]) {
   setLogFile();
   std::string brokers = "127.0.0.1";
   std::string errstr;
-  std::string topic_str = "paytm_topic";
+  std::string topic_str = "paytm-topic";
   std::string mode;
   std::string debug = "all";
-  int32_t partition    = RdKafka::Topic::PARTITION_UA;
+  int32_t partition    = 0;
   int64_t start_offset = RdKafka::Topic::OFFSET_BEGINNING;
   RdKafka::Conf *conf  = RdKafka::Conf::create(RdKafka::Conf::CONF_GLOBAL);
   conf->set("metadata.broker.list", brokers, errstr);
